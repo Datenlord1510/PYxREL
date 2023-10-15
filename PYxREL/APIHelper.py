@@ -22,9 +22,11 @@ class APIHelper:
                 elif response_format == "xml":
                     return response.content
             except Exception as val_error:
-                print("Invalid response format: ", val_error)
+                print(f"Invalid response format: {val_error}\n"
+                      f"Response content: {response.text}")
                 return None
 
         except requests.RequestException as req_error:
-            print("Request failed: ", req_error)
+            print(f"Invalid response format: {req_error}\n"
+                  f"Response content: {response.text}")
             return None

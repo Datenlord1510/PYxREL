@@ -4,7 +4,7 @@ from .APIHelper import APIHelper
 class NFO(APIHelper):
 
     def __init__(self):
-        self.nfo_api = "https://api.xrel.to/v2/nfo/"
+        self.nfo_api = f"{self.base_api}nfo/"
 
     def get_release(self, release_id: str, response_format="json"):
         # TODO: Needs OAUTH!

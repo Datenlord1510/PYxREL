@@ -4,6 +4,7 @@ from .APIHelper import APIHelper
 class Favorites(APIHelper):
 
     def __init__(self):
+        super().__init__()
         self.favorites_api = f"{self.base_api}favs/"
 
     def get_lists(self, response_format="json"):

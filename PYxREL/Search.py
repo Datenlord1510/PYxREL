@@ -4,6 +4,7 @@ from .APIHelper import APIHelper
 class Search(APIHelper):
 
     def __init__(self):
+        super().__init__()
         self.search_api = f"{self.base_api}search/"
 
     def get_releases(self, keyword, scene=True, p2p=False, limit=25,

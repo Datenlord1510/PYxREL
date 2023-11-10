@@ -4,6 +4,7 @@ from .APIHelper import APIHelper
 class P2P(APIHelper):
 
     def __init__(self):
+        super().__init__()
         self.p2p_api = f"{self.base_api}p2p/"
 
     def get_releases(self, per_page=25, page=1, category_id=None,

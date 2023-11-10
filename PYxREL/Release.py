@@ -4,6 +4,7 @@ from .APIHelper import APIHelper
 class Release(APIHelper):
 
     def __init__(self):
+        super().__init__()
         self.release_api = f"{self.base_api}release/"
 
     def get_info(self, release_id=None, dirname=None, response_format="json"):

@@ -4,6 +4,7 @@ from .APIHelper import APIHelper
 class Comments(APIHelper):
 
     def __init__(self):
+        super().__init__()
         self.comments_api = f"{self.base_api}comments/"
 
     def get_comments(self, release_id, release_type="release", per_page=25,

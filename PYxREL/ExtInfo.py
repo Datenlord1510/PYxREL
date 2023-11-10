@@ -4,6 +4,7 @@ from .APIHelper import APIHelper
 class ExtInfo(APIHelper):
 
     def __init__(self):
+        super().__init__()
         self.ext_info_api = f"{self.base_api}ext_info/"
         self.calendar_api = f"{self.base_api}calendar/upcoming"
 

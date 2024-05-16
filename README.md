@@ -8,7 +8,7 @@ This is a Python API wrapper for the official xREL API, providing an easy way to
 You can use this package by importing the `xREL` class directly into your Python scripts. Here's how to do it:
 
 ```Python
-from PYxREL import xREL
+from pyxrel import xREL
 
 # Create an instance of the xREL class
 xrel = xREL()
